@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Task Tracker</title>
+  <meta name="description" content="Task Tracker">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header-shadow"></div>
+<div id="container">
+	<div id="header" class="header-shadow">
+		<div class="header-title">Task Tracker</div>
+		<div>v2.0</div>
+	</div>
+
+	<div id="section">
+		<div id="left_col">
+			<h3>Create a Task</h3>
+			<form id="tasks-form">
+				<div>
+					<div>
+						<lable class="inputlable" for="taskName">Task Name</lable>
+					</div>
+					<div>
+						<input type="text" class="txtinput" name="taskName" id="taskName" />
+					</div>
+				</div>
+				<div>
+					<div>
+						<lable class="inputlable" for="taskDate">Date</lable>
+					</div>
+					<div>
+						<input type="date" class="txtinput" name="taskDate" id="taskDate" />
+					</div>
+				</div>
+				<div>
+					<div>
+						<lable class="inputlable" for="assignedTo">Assigned To</lable>
+					</div>
+					<div>
+						<input type="text" class="txtinput" name="assignedTo" id="assignedTo" />
+					</div>
+				</div>
+				<div>
+					<div class="submit_div">
+						<button id="taskDetailSubmit" class="btn">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="right_col">
+			<h3>Existing Tasks</h3>
+			<div class="table" id="taskLists"></div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+</div>
+</div>
+<script src="js/jQuery/jquery-2.2.0.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
